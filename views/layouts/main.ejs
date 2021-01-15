@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../Css/style.css" rel="stylesheet" />
+    <script src="../Js/sort.js"></script>
+
+    <title><%- title %></title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <ul>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Average System Response</a>
+              <a class="dropdown-item" href="#">Branch Code</a>
+              <a class="dropdown-item" href="#">Email Date</a>
+              <a class="dropdown-item" href="#">Host Previously DOWN for</a>
+              <a class="dropdown-item" href="#">Host Previously UP for</a>
+              <a class="dropdown-item" href="#">Last Date Checked DOWN</a>
+              <a class="dropdown-item" href="#">Last Date Checked UP</a>
+              <a class="dropdown-item" href="#">Location</a>
+              <a class="dropdown-item" href="#">Name</a>
+              <a class="dropdown-item" href="#">Note</a>
+              <a class="dropdown-item" href="#">Status</a>
+              <a class="dropdown-item" href="#">System Availability</a>
+              <a class="dropdown-item" href="#">Total Checks Since Clear</a>
+              <a class="dropdown-item" href="#">Total Failed Checks</a>
+              <a class="dropdown-item" href="#">Uptime</a>
+              <a class="dropdown-item" href="#">System</a>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </ul>
+      </div>
+    </nav>
+    <div id="root">
+      <%- body %>
+    </div>
+  </body>
+</html>
