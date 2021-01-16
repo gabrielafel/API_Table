@@ -2,25 +2,24 @@
   <table id="myTable" class="table table-bordered">
     <thead class="thead-dark">
       <tr>
-        <th>No</th>
-        <th>Average System Response</th>
-        <th>Branch Code</th>
-        <th>Current Ping Response</th>
-        <th>Email Date</th>
-        <th>Host Previously DOWN for</th>
-        <th>Host Previously UP for</th>
-        <th>Last Date Checked DOWN</th>
-        <th>Last Date Checked UP</th>
-        <th>Location</th>
-        <th>Name</th>
-        <th>Note</th>
-        <th>Status</th>
-        <th>System Availability</th>
-        <th>Total Checks Since Clear</th>
-        <th>Total Failed Checks</th>
-        <th>Uptime</th>
-        <th>System</th>
-        <th></th>
+        <th onclick="sortTable(0)">No</th>
+        <th onclick="sortTable(1)">Average System Response</th>
+        <th onclick="sortTable(2)">Branch Code</th>
+        <th onclick="sortTable(3)">Current Ping Response</th>
+        <th onclick="sortTable(4)">Email Date</th>
+        <th onclick="sortTable(5)">Host Previously DOWN for</th>
+        <th onclick="sortTable(6)">Host Previously UP for</th>
+        <th onclick="sortTable(7)">Last Date Checked DOWN</th>
+        <th onclick="sortTable(8)">Last Date Checked UP</th>
+        <th onclick="sortTable(9)">Location</th>
+        <th onclick="sortTable(10)">Name</th>
+        <th onclick="sortTable(11)">Note</th>
+        <th onclick="sortTable(12)">Status</th>
+        <th onclick="sortTable(13)">System Availability</th>
+        <th onclick="sortTable(14)">Total Checks Since Clear</th>
+        <th onclick="sortTable(15)">Total Failed Checks</th>
+        <th onclick="sortTable(16)">Uptime</th>
+        <th onclick="sortTable(17)">System</th>
       </tr>
       <% if (!data || data.length == 0) { %>
         <tr><td colspan="4" class="text-center"><i>No data!</i></td></tr>
