@@ -28,6 +28,6 @@ const DataAPI = require('./routes/Data');
 
 app.use('/', DataAPI);
 
-let PORT = process.env.PORT || 2000;
+let PORT = process.env.PORT || 3000;
 app.listen(PORT);
-console.log('Server runs at port 2000...');
+console.log('Server runs at port 3000...');

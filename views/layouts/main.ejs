@@ -9,9 +9,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="../Css/style.css" rel="stylesheet" />
     <script src="../Js/sort.js"></script>
-    <!-- <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"></script>
-    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap.min.js"></script> -->
     <title><%- title %></title>
   </head>
   <body>
@@ -22,24 +19,24 @@
     </nav>
     <nav class="nav">
       <div class="dropdown">
-        <b><label style="margin-left: 50px;margin-right: 5px;">Show: </label></b>
+        <b><label style="margin-left: 33px;">Show: </label></b>
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" style="margin-bottom: 10px;" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false"><%= limit %></button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=10">10</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=20">20</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=30">30</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=40">40</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=50">50</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=100">100</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=200">200</a>
-        <a class="dropdown-item" href="/?page=<%= current %>&limit=300">300</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=10&filter=<%= filter %>">10</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=20&filter=<%= filter %>">20</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=30&filter=<%= filter %>">30</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=40&filter=<%= filter %>">40</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=50&filter=<%= filter %>">50</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=100&filter=<%= filter %>">100</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=200&filter=<%= filter %>">200</a>
+          <a class="dropdown-item" href="/?page=<%= current %>&limit=300&filter=<%= filter %>">300</a>
         </div>
-        <b><label style="margin-left: 5px;margin-right: 50px;">entries.</label></b>
+        <b><label style="margin-left: 5px;margin-right: 10px;">entries.</label></b>
       </div>
-      <form class="d-flex">
-        <b><label style="margin-top: 10px; margin-right: 5px;">Search: </label></b>
-        <input class="form-control" style="margin-bottom: 10px;" id="myInput" type="text" placeholder="Search">
+      <form class="d-flex" action="/" method="GET">
+        <b><label style="margin-top: 10px; margin-right: 5px; margin-left: 15px;">Search: </label></b>
+        <input class="form-control" style="margin-bottom: 10px; width: 100px;" name="filter" id="myInput" type="text" placeholder="Search">
       </form>
     </nav>
     <div id="root">
