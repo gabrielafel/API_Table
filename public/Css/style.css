@@ -1,10 +1,19 @@
 td, th{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: medium;
 }
 
 body{
     background-image: url("../Img/bground.png");
+}
+
+#myTable{
+    margin-left:20px;
+}
+
+.pagination{
+    margin-left:20px
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -13,7 +22,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 #myTable {
-table-layout:auto;
+    table-layout:auto;
 }
 #show{
     margin-left: 10px;
